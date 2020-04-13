@@ -1,0 +1,5 @@
+xml包下是对mybatis-config.xml 具体的解析
+并映射到configuration对象
+
+入口类XMLConfigBuilder
+   核心方法

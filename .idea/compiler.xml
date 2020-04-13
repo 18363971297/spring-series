@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jdbc" />
+        <module name="mybatis" />
+        <module name="pattern" />
+        <module name="shiro-test" />
+        <module name="spring-cloud-feign" />
+        <module name="spring-core-test" />
+        <module name="spring-kafka" />
+        <module name="spring-maven-life" />
+        <module name="spring-springmvc" />
+        <module name="spring-xxljob" />
+        <module name="utils" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="jdbc" target="1.8" />
+      <module name="mybatis" target="1.8" />
+      <module name="pattern" target="1.8" />
+      <module name="shiro-test" target="1.8" />
+      <module name="spring-cloud-feign" target="1.8" />
+      <module name="spring-core-test" target="1.8" />
+      <module name="spring-kafka" target="1.8" />
+      <module name="spring-maven-life" target="1.8" />
+      <module name="spring-series" target="1.8" />
+      <module name="spring-springmvc" target="1.8" />
+      <module name="spring-xxljob" target="1.8" />
+      <module name="utils" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

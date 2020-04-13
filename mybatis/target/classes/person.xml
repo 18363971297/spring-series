@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Person>
+    <Childrens>
+        <Children id="1" name="zhangsan" age="10" sex="男">
+        </Children>
+        <Children id="2" name="李四" age="30" sex="女">
+        </Children>
+        <Children id="3" name="王五" age="20" sex="男">
+        </Children>
+        <Children id="4" name="赵六" age="40" sex="女">
+        </Children>
+    </Childrens>
+    <Books>
+        <book>
+            <name>java</name>
+            <price>90</price>
+        </book>
+        <book>
+            <name>php</name>
+            <price>90</price>
+        </book>
+        <book>
+            <name>python</name>
+            <price>90</price>
+        </book>
+    </Books>
+</Person>

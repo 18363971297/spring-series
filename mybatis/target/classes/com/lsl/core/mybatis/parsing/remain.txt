@@ -1,0 +1,3 @@
+对mybatis-config.xml的配置文件进行解析
+
+解析中使用到了封装的XML相关工具类 XPath

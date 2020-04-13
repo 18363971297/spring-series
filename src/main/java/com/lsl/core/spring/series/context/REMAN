@@ -1,0 +1,69 @@
+1  spring容器
+   1.1 spring容器是什么
+     spring容器是管理一些列bean实例的一个容器池，bean就是我们创建的对象实例。
+     bean实例创建后，我们可以重复使用，之前我们在某个类中引用其他的实例，需要自己手动set，并且可能重复创建
+     而现在使用了spring容器，他可以统一进行管理bean之前的依赖
+   1.2 spring容器能干什么
+     spring容器主要的功能就是给我们管理创建的实例bean，它给我们提供了容器的上下文对象供我们来操作bean
+     这样我们就不需要关心太多的创建细节
+
+2  spring 独立运行，即不借助任何服务容器，仅是纯java运行
+
+
+3  spring容器的获取方式
+   3.1 类路径获取  classpath：  lib/resources
+       ClassPathXmlApplicationContext
+   3.2 系统文件类路径获取
+       FileSystemXmlApplicationContext
+   3.3 注解配置获取
+       AnnotationConfigApplicationContext
+
+4  spring容器运行的基础
+   4.1  jdk
+   4.2  spring容器依赖的相关包，最基础的核心包
+       spring-context,spring-core,spring-bean
+       在maven中，我们仅需要dependency spring-context包就可以，因context依赖与core和bean
+
+
+
+5 类继承关系
+ResourceLoader(接口)
+    DefaultResourceLoader
+        AbstractApplicationContext
+            AbstractRefreshableApplicationContext
+                 AbstractRefreshableConfigApplicationContext.class
+                     AbstractXmlApplicationContext.class
+                         ClassPathXmlApplicationContext.class
+
+加载配置文件
+1、
+AbstractXmlApplicationContext -> loadBeanDefinitions();
+    protected void loadBeanDefinitions(DefaultListableBeanFactory beanFactory) throws BeansException, IOException {
+            // Create a new XmlBeanDefinitionReader for the given BeanFactory.
+            // 创建一个xmlbean的解析器，用于读取xml中各bean的信息
+            XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);
+
+            // Configure the bean definition reader with this context's
+            // resource loading environment.
+            beanDefinitionReader.setEnvironment(this.getEnvironment());
+            beanDefinitionReader.setResourceLoader(this);
+            beanDefinitionReader.setEntityResolver(new ResourceEntityResolver(this));
+
+            // Allow a subclass to provide custom initialization of the reader,
+            // then proceed with actually loading the bean definitions.
+            initBeanDefinitionReader(beanDefinitionReader);
+            // 创建bean
+            loadBeanDefinitions(beanDefinitionReader);
+        }
+2、
+protected void loadBeanDefinitions(XmlBeanDefinitionReader reader) throws BeansException, IOException {
+		Resource[] configResources = getConfigResources();
+		if (configResources != null) {
+			reader.loadBeanDefinitions(configResources);
+		}
+		String[] configLocations = getConfigLocations();
+		if (configLocations != null) {
+			reader.loadBeanDefinitions(configLocations);
+		}
+	}
+

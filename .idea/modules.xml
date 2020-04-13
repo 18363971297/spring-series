@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pattern/pattern.iml" filepath="$PROJECT_DIR$/pattern/pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro-test/shiro-test.iml" filepath="$PROJECT_DIR$/shiro-test/shiro-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-feign/spring-cloud-feign.iml" filepath="$PROJECT_DIR$/spring-cloud-feign/spring-cloud-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-core-test/spring-core-test.iml" filepath="$PROJECT_DIR$/spring-core-test/spring-core-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-kafka/spring-kafka.iml" filepath="$PROJECT_DIR$/spring-kafka/spring-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-maven-life/spring-maven-life.iml" filepath="$PROJECT_DIR$/spring-maven-life/spring-maven-life.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-series.iml" filepath="$PROJECT_DIR$/spring-series.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-springmvc/spring-springmvc.iml" filepath="$PROJECT_DIR$/spring-springmvc/spring-springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-xxljob/spring-xxljob.iml" filepath="$PROJECT_DIR$/spring-xxljob/spring-xxljob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
+    </modules>
+  </component>
+</project>
